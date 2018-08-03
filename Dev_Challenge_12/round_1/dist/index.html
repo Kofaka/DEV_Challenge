@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <title>Добре Серце</title>
+</head>
+<body class="show-modal">
+<header>
+  <!--Here will be header-->
+</header>
+
+<main class="main-wrapper">
+  <!--Here should be basically landing its self-->
+
+  <!--Here starts donation form modal window-->
+  <div class="modal" id="donationFormModalWindow">
+    <button class="modal-close-button">Close</button>
+
+    <div class="modal-wrapper">
+      <div class="modal-content">
+        <form action="" method="post" id="donationForm">
+          <section class="modal-content__section">
+            <h3 class="modal-content__section__title">Заповніть форму</h3>
+            <div class="modal-content__section__subtitle">
+              <div class="modal-content__section__subtitle__button-group">
+                <button class="modal-content__section__subtitle__button
+                               modal-content__section__subtitle__button_active"
+                        type="button"
+                >
+                  Фіз. особа
+                </button>
+
+                <button class="modal-content__section__subtitle__button"
+                        type="button"
+                >
+                  Юр. особа
+                </button>
+              </div>
+            </div>
+
+            <div class="modal-content__section__description">
+              <section class="modal-content__section__description__section
+                              modal-content__section__description__section_small">
+                <fieldset class="modal-content__section__description__fieldset
+                                 modal-content__section__description__fieldset_small">
+                  <label class="modal-content__label" for="userName">Ім’я</label>
+                  <input class="modal-content__input" id="userName" type="text" tabindex="1">
+                </fieldset>
+
+                <fieldset class="modal-content__section__description__fieldset
+                                 modal-content__section__description__fieldset_small">
+                  <!--Here is typo, it should be "Прізвище"-->
+                  <label class="modal-content__label" for="userSurname">Фамілія</label>
+                  <input class="modal-content__input" id="userSurname" type="text" tabindex="2">
+                </fieldset>
+
+                <fieldset class="modal-content__section__description__fieldset">
+                  <label class="modal-content__label" for="userCompany">Назва компаніі, організації</label>
+                  <input class="modal-content__input" id="userCompany" type="text" tabindex="3">
+                  <button class="modal-content__section__description__fieldset__extra-button">
+                    +  Логотип
+                  </button>
+                </fieldset>
+
+                <fieldset class="modal-content__section__description__fieldset">
+                  <!--Here is typo, it should be "Email-адресса"-->
+                  <label class="modal-content__label" for="userEmail">Email-адрес</label>
+                  <input class="modal-content__input" id="userEmail" type="email" tabindex="4">
+                </fieldset>
+
+                <fieldset class="modal-content__section__description__fieldset">
+                  <label class="modal-content__label" for="userPhoneNumber">Номер телефону</label>
+                  <input class="modal-content__input" id="userPhoneNumber" type="tel" tabindex="5">
+                </fieldset>
+              </section>
+
+              <section class="modal-content__section__description__section
+                              modal-content__section__description__section_small">
+                <fieldset class="modal-content__section__description__fieldset">
+                  <label class="modal-content__label" for="userCountry">Країна</label>
+                  <input class="modal-content__input" id="userCountry" type="text" tabindex="6">
+                </fieldset>
+
+                <fieldset class="modal-content__section__description__fieldset
+                                 modal-content__section__description__fieldset_small">
+                  <label class="modal-content__label" for="userCity">Місто</label>
+                  <input class="modal-content__input" id="userCity" type="text" tabindex="7">
+                </fieldset>
+
+                <fieldset class="modal-content__section__description__fieldset
+                                 modal-content__section__description__fieldset_small">
+                  <label class="modal-content__label" for="userState">Штат, район</label>
+                  <input class="modal-content__input" id="userState" type="text" tabindex="8">
+                </fieldset>
+
+                <fieldset class="modal-content__section__description__fieldset">
+                  <label class="modal-content__label" for="userAddress">Адреса</label>
+                  <input class="modal-content__input" id="userAddress" type="text" tabindex="9">
+                </fieldset>
+
+                <fieldset class="modal-content__section__description__fieldset
+                                 modal-content__section__description__fieldset_small">
+                  <label class="modal-content__label" for="userPostIndex">Поштовий індекс</label>
+                  <input class="modal-content__input" id="userPostIndex" type="number" tabindex="10">
+                </fieldset>
+              </section>
+            </div>
+          </section>
+
+          <section class="modal-content__section">
+            <h3 class="modal-content__section__title">Види допомоги</h3>
+            <div class="modal-content__section__subtitle">
+              <p class="modal-content__section__subtitle__text">
+                Ви можете змінити вид допомоги
+              </p>
+            </div>
+
+            <div class="modal-content__section__description">
+              <nav class="modal-content__section__description__navbar">
+                <h4 class="modal-content__section__description__navbar-item">
+                  <i class="modal-content__section__description__navbar-item-icon
+                            modal-content__section__description__navbar-item-icon_hand"></i>
+                  <span class="modal-content__section__description__navbar-item-text">Зробити</span>
+                </h4>
+
+                <h4 class="modal-content__section__description__navbar-item
+                           modal-content__section__description__navbar-item_active">
+                  <i class="modal-content__section__description__navbar-item-icon
+                            modal-content__section__description__navbar-item-icon_wallet"></i>
+                  <span class="modal-content__section__description__navbar-item-text">Фінансова допомога</span>
+                </h4>
+
+                <h4 class="modal-content__section__description__navbar-item">
+                  <i class="modal-content__section__description__navbar-item-icon
+                            modal-content__section__description__navbar-item-icon_clothes"></i>
+                  <span class="modal-content__section__description__navbar-item-text">Матеріальна допомога</span>
+                </h4>
+
+                <h4 class="modal-content__section__description__navbar-item">
+                  <i class="modal-content__section__description__navbar-item-icon
+                            modal-content__section__description__navbar-item-icon_hart"></i>
+                  <span class="modal-content__section__description__navbar-item-text">Волонтерство</span>
+                </h4>
+              </nav>
+
+              <div class="modal-content__section__description__wrapper">
+                <div class="modal-content__section__description__item" id="doHelp"></div>
+
+                <div class="modal-content__section__description__item
+                            modal-content__section__description__item_active"
+                     id="financeDonation">
+                  <section class="modal-content__section__description__item__section"
+                           id="paymentMethod">
+                    <h4 class="modal-content__section__description__item__section__title">
+                      Спосіб оплати
+                    </h4>
+
+                    <button class="modal-content__section__description__item__section__payment-type"
+                            id="VisaPay" tabindex="11">
+                      Карта Visa/MasterCard
+                    </button>
+
+                    <button class="modal-content__section__description__item__section__payment-type
+                                   modal-content__section__description__item__section__payment-type_active"
+                            id="Privat24" tabindex="12">
+                      Приват24
+                    </button>
+
+                    <button class="modal-content__section__description__item__section__payment-type"
+                            id="Terminal" tabindex="13">
+                      Термінали України
+                    </button>
+
+                    <button class="modal-content__section__description__item__section__payment-type"
+                            id="WebMoney" tabindex="14">
+                      WebMoney
+                    </button>
+
+                    <button class="modal-content__section__description__item__section__payment-type"
+                            id="PayPal" tabindex="15">
+                      PayPal
+                    </button>
+                  </section>
+
+                  <section class="modal-content__section__description__item__section">
+                    <h4 class="modal-content__section__description__item__section__title">
+                      Введіть наступні данні
+                    </h4>
+
+                    <div class="modal-content__section__description__item__section__payment-type-info"
+                         id="paymentMethodPrivat24">
+                      <div class="modal-content__credit-card">
+                        <div class="modal-content__credit-card__section">
+                          <label for="cardNumberPart1">Номер карти</label>
+                          <!--'type="tel" maxlength="4"' used here to prevent using js to validate input length -->
+                          <input class="card-number-part" id="cardNumberPart1" type="tel" maxlength="4" tabindex="16">
+                          <input class="card-number-part" id="cardNumberPart2" type="tel" maxlength="4" tabindex="17">
+                          <input class="card-number-part" id="cardNumberPart3" type="tel" maxlength="4" tabindex="18">
+                          <input class="card-number-part" id="cardNumberPart4" type="tel"
+                                 maxlength="4" tabindex="19">
+                        </div>
+
+                        <div class="modal-content__credit-card__section">
+                          <div>
+                            <label for="cardExpDate">Термін дії</label>
+                            <input class="card-date" id="cardExpDate" type="text" tabindex="20">
+                          </div>
+
+                          <div>
+                            <label for="cardCvv">CVC/CVV</label>
+                            <input class="card-date" id="cardCvv" type="tel" minlength="3" maxlength="4" tabindex="21">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+
+              <div class="modal-content__section__description__item" id="donateClothes"></div>
+
+              <div class="modal-content__section__description__item" id="volunteering"></div>
+            </div>
+          </section>
+
+          <section class="modal-content__section">
+            <button class="modal-content__submit-button"
+                    type="submit"
+                    form="donationForm">
+              Допомогти
+            </button>
+          </section>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <!--Here will be header-->
+</footer>
+</body>
+</html>

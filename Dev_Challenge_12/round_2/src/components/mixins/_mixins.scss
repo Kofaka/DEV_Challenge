@@ -1,0 +1,60 @@
+@mixin fa-icons($iconGroup, $icon, $size, $color) {
+  @include fa-icon;
+  @extend #{$iconGroup};
+
+  &:before {
+    content: fa-content($icon);
+    font-size: $size;
+    color: $color
+  }
+}
+
+@mixin fa-icon-brand($icon, $size: initial, $color: initial) {
+  @include fa-icons('.fab', $icon, #{$size}, #{$color});
+}
+
+@mixin fa-icon-regular($icon, $size: initial, $color: initial) {
+  @include fa-icons('.far', $icon, #{$size}, #{$color});
+}
+
+@mixin fa-icon-solid($icon, $size: initial, $color: initial) {
+  @include fa-icons('.fas', $icon, #{$size}, #{$color});
+}
+
+
+@mixin decoration-with-line($color, $size: 0.4rem) {
+    content: '';
+    position: absolute;
+    top: calc(50% - #{$size / 2});
+    left: 0;
+    width: 100%;
+    height: $size;
+    background-color: $color;
+    box-sizing: border-box;
+    z-index: -1;
+}
+
+
+@function multiplyValues($value1, $value2, $value3) {
+  @return $value1 * $value2 * $value3;
+}
+
+@mixin truncate-text($font-size, $line-height, $lines-number) {
+  margin: 0 auto;
+  display: block;
+  display: -webkit-box;
+  height: multiplyValues($font-size, $line-height, $lines-number);
+  font-size: $font-size;
+  line-height: $line-height;
+  -webkit-line-clamp: $lines-number;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+
+
+
+
+

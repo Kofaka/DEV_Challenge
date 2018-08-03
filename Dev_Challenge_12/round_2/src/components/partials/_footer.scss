@@ -1,0 +1,216 @@
+.footer-wrapper {
+  @include make-row();
+  margin: 0 auto;
+  max-width: 1620px;
+  background-color: $white;
+}
+
+.footer-section {
+  display: block;
+  width: 100%;
+
+  &_contacts {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &_info {
+    margin: 0 auto;
+    padding: 30px 0;
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 100%;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 100vw;
+      max-width: 1820px;
+      height: 1px;
+      transform: translate(-50%, 0);
+      background: $color-gray-300;
+    }
+  }
+
+  &__logo {
+    width: 215px;
+    height: 64px;
+    display: block;
+    background: #fff url('./img/miequity-logo_dark.jpg') no-repeat 0 top;
+    background-size: 215px auto;
+  }
+
+  &__address {
+    margin: 0;
+    max-width: 290px;
+    text-align: right;
+    color: $color-gray-600;
+    font-size: 0.93rem;
+    line-height: 2;
+
+    &__section {
+      display: block;
+    }
+
+    &__link {
+      color: $color-gray-600;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        color: $color-gray-675;
+        text-decoration: none;
+        outline: none;
+        box-shadow: none;
+        cursor: pointer;
+      }
+
+      &:active {
+        color: $color-orange;
+        outline: none;
+        box-shadow: none;
+      }
+    }
+  }
+
+  &__nav {
+    margin-bottom: 59px;
+
+    &__list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      &-item {
+        display: inline-block;
+        padding: 0 30px 0 0;
+
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+
+    &__link {
+      color: $color-gray-900;
+      font-size: 0.875rem;
+      font-weight: bold;
+      line-height: 1em;
+      text-transform: uppercase;
+      text-decoration: none;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: $color-gray-675;
+        text-decoration: none;
+        outline: none;
+        box-shadow: none;
+        cursor: pointer;
+      }
+
+      &.active,
+      &:active {
+        color: $color-orange;
+      }
+
+    }
+  }
+
+  &__tm {
+    margin: 0;
+    padding: 0;
+    color: $color-gray-675;
+    font-family: $font-family-secondary;
+    font-size: 0.875rem;
+    line-height: 1em;
+
+    &__link {
+      color: $color-gray-675;
+      text-decoration: none;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: $color-gray-700;
+        text-decoration: none;
+        outline: none;
+        box-shadow: none;
+        cursor: pointer;
+      }
+
+      &:active {
+        color: $color-orange;
+      }
+    }
+  }
+
+  &__social {
+    max-width: fit-content;
+    margin-left: auto;
+
+    &__list {
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(5, 1rem);
+      grid-gap: 25px;
+      max-width: fit-content;
+      list-style: none;
+    }
+
+    &__link {
+      font-size: 0;
+      color: transparent;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: $color-gray-700;
+        text-decoration: none;
+        outline: none;
+        box-shadow: none;
+        cursor: pointer;
+
+        &::before {
+          color: $color-gray-700;
+        }
+      }
+
+      &.active,
+      &:active {
+        color: $color-orange;
+
+        &::before {
+          color: $color-orange;
+        }
+      }
+
+      &_fb {
+        @include fa-icon-brand($fa-var-facebook-f, 1rem, $color-gray-650);
+      }
+
+      &_twitter {
+        @include fa-icon-brand($fa-var-twitter, 1rem, $color-gray-650);
+      }
+
+      &_google-plus {
+        @include fa-icon-brand($fa-var-google-plus-g, 1rem, $color-gray-650);
+      }
+
+      &_instagram {
+        @include fa-icon-brand($fa-var-instagram, 1rem, $color-gray-650);
+      }
+
+      &_linkedin {
+        @include fa-icon-brand($fa-var-linkedin-in, 1rem, $color-gray-650);
+      }
+    }
+  }
+}

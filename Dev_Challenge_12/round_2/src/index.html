@@ -1,0 +1,851 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0"/>
+
+  <title>MIEQUITY</title>
+  <meta name="description" content="MIEQUITY - source about everything you need.">
+  <meta name="theme-color" content="#efae7c"/>
+
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+
+  <link rel="shortcut icon" href="favicons/favicon.ico" type="image/png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <link rel="manifest" href="favicons/site.webmanifest">
+  <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#efae7c">
+  <meta name="apple-mobile-web-app-title" content="MIEQUITY">
+  <meta name="application-name" content="MIEQUITY">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+  <header class="header-wrapper">
+    <nav class="header-navbar">
+      <a class="header-brand" href="#">
+        MIEQUITY
+      </a>
+
+      <button class="header-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#headerNavbarMenu"
+              aria-controls="headerNavbarMenu"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="header-toggler__icon"></span>
+      </button>
+
+      <div class="header-menu"
+           id="headerNavbarMenu">
+        <ul class="header-menu__list">
+          <li class="header-menu__item">
+            <a class="header-menu__link"
+               href="#">
+              Home
+            </a>
+          </li>
+
+          <li class="header-menu__item">
+            <a class="header-menu__link"
+               href="#">
+              About
+            </a>
+          </li>
+
+          <li class="header-menu__item">
+            <a class="header-menu__link"
+               href="#">
+              Services
+            </a>
+          </li>
+
+          <li class="header-menu__item">
+            <a class="header-menu__link"
+               href="#">
+              Investments
+            </a>
+          </li>
+
+          <li class="header-menu__item active">
+            <a class="header-menu__link"
+               href="#">
+              Blog
+            </a>
+          </li>
+
+          <li class="header-menu__item">
+            <a class="header-menu__link"
+               href="#">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="content-wrapper">
+    <section class="content-section
+                    content-section_heroshot">
+      <div class="content-section__description-wrapper">
+        <h1 class="content-section__title">
+          Business Insight
+        </h1>
+
+        <h2 class="content-section__description">
+          Adding value to companies through strategic, operational, and financial guidance.
+        </h2>
+      </div>
+
+      <a href="#firstSectionAfterHeroshot"
+         class="content-section__button-go-down">
+        Go down
+      </a>
+    </section>
+
+    <section class="content-section
+                    content-section_latest"
+             id="firstSectionAfterHeroshot">
+      <nav class="content-section__nav">
+        <div class="content-section__nav-items-group">
+          <button class="content-section__nav-item active"
+                  href="#">
+            All
+          </button>
+
+          <button class="content-section__nav-item"
+                  href="#">
+            MI Equity
+          </button>
+
+          <button class="content-section__nav-item"
+                  href="#">
+            MI Strategic Growth
+          </button>
+
+          <button class="content-section__nav-item"
+                  href="#">
+            Benefit Street Partners
+          </button>
+        </div>
+
+        <div class="content-section__nav-items-group
+                    content-section__nav-items-group_right-arranged">
+          <div class="content-section__dropdown">
+            <button class="content-section__dropdown__button"
+                    type="button"
+                    id="sortByDropdownButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false">
+              Sort by Date
+            </button>
+
+            <div class="content-section__dropdown__menu"
+                 aria-labelledby="sortByDropdownButton">
+              <button class="content-section__dropdown__item">
+                Sort by Date
+              </button>
+
+              <button class="content-section__dropdown__item">
+                Sort by Rate
+              </button>
+
+              <button class="content-section__dropdown__item">
+                Sort by Distance from You
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="content-section__content-wrapper">
+        <div class="content-section__article
+                    content-section__article_sm">
+          <span class="content-section__article__badge">
+            Equity
+          </span>
+
+          <figure class="content-section__article__caption-container">
+            <img class="content-section__article__caption"
+                 src="./img/MI_Strategic_Growth_Chief_Seeks_Disruptive_Deals.jpg"
+                 alt="MI Strategic Growth Chief Seeks Disruptive Deals">
+            <figcaption class="content-section__article__figcaption">
+              <a href=""
+                 class="content-section__article__title"
+                 title="MI Strategic Growth Chief Seeks Disruptive Deals">
+                MI Strategic Growth Chief Seeks Disruptive Deals
+              </a>
+
+              <time class="content-section__article__time"
+                    datetime="2017-04-11">
+                11 apr 2017
+              </time>
+            </figcaption>
+          </figure>
+
+          <p class="content-section__article__notice">
+            To achieve this goal, we seek to forge lasting partnerships with
+            talented entrepreneurs and executives and provide them the capital.
+          </p>
+        </div>
+
+        <div class="content-section__article
+                    content-section__article_video">
+          <video class="content-section__article__video-container"
+                 poster="./img/Latest_News_Video.jpg"
+                 width="370"
+                 height="259">
+            <source src="https://www.youtube.com/embed/-F91QzJ8Hic"
+                    type="video/mp4"
+                    rel="noopener noreferrer">
+            Unfortunately your browser does not support this type of video.
+            Please, try to watch it here
+            <a href="https://www.youtube.com/embed/-F91QzJ8Hic"
+               rel="noopener noreferrer"
+               target="_blank">
+              Link to Video
+            </a>
+          </video>
+
+          <button class="content-section__article__video-play-button">Play video</button>
+        </div>
+
+        <div class="content-section__article
+                    content-section__article_lg">
+            <span class="content-section__article__badge
+                         content-section__article__badge_right">
+              Featured
+            </span>
+          <figure class="content-section__article__caption-container">
+            <img class="content-section__article__caption"
+                 src="./img/MI_Strategic_Growth_Chief_Seeks_Disruptive_Deals_big.jpg"
+                 alt="An awesome picture">
+            <figcaption class="content-section__article__figcaption">
+              <a href=""
+                 class="content-section__article__title"
+                 title="MI Strategic Growth Chief Seeks Disruptive Deals">
+                MI Strategic Growth Chief Seeks Disruptive Deals
+              </a>
+
+              <time class="content-section__article__time"
+                    datetime="2017-04-11">
+                11 apr 2017
+              </time>
+            </figcaption>
+          </figure>
+
+          <p class="content-section__article__notice">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderitin
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis
+            unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+            magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
+            quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut
+            labore et dolore magnam aliquam quaerat voluptatem.
+          </p>
+        </div>
+
+        <aside class="content-section__aside">
+          <figure class="content-section__aside-section">
+            <img class="content-section__aside-section__caption"
+                 src="./img/MI_Strategic_Growth_Chief_Seeks_Disruptive_Deals_small.jpg"
+                 alt="MI Strategic Growth Chief Seeks Disruptive Deals">
+            <figcaption class="content-section__aside-section__description-wrapper">
+              <a href=""
+                 class="content-section__aside-section__title"
+                 title="MI Strategic Growth Chief Seeks Disruptive Deals">
+                MI Strategic Growth Chief Seeks Disruptive Deals
+              </a>
+
+              <time class="content-section__aside-section__time"
+                    datetime="2017-04-11">
+                11 apr 2017
+              </time>
+            </figcaption>
+          </figure>
+
+          <figure class="content-section__aside-section">
+            <img class="content-section__aside-section__caption"
+                 src="./img/MI_Strategic_Growth_Chief_Seeks_Disruptive_Deals_small.jpg"
+                 alt="MI Strategic Growth Chief Seeks Disruptive Deals">
+            <figcaption class="content-section__aside-section__description-wrapper">
+              <a href=""
+                 class="content-section__aside-section__title"
+                 title="MI Strategic Growth Chief Seeks Disruptive Deals">
+                MI Strategic Growth Chief Seeks Disruptive Deals
+              </a>
+
+              <time class="content-section__aside-section__time"
+                    datetime="2017-04-11">
+                11 apr 2017
+              </time>
+            </figcaption>
+          </figure>
+
+          <figure class="content-section__aside-section active">
+            <img class="content-section__aside-section__caption"
+                 src="./img/MI_Strategic_Growth_Chief_Seeks_Disruptive_Deals_small.jpg"
+                 alt="MI Strategic Growth Chief Seeks Disruptive Deals">
+            <figcaption class="content-section__aside-section__description-wrapper">
+              <a href=""
+                 class="content-section__aside-section__title"
+                 title="MI Strategic Growth Chief Seeks Disruptive Deals">
+                MI Strategic Growth Chief Seeks Disruptive Deals
+              </a>
+
+              <time class="content-section__aside-section__time"
+                    datetime="2017-04-11">
+                11 apr 2017
+              </time>
+            </figcaption>
+          </figure>
+
+          <figure class="content-section__aside-section">
+            <img class="content-section__aside-section__caption"
+                 src="./img/MI_Strategic_Growth_Chief_Seeks_Disruptive_Deals_small.jpg"
+                 alt="MI Strategic Growth Chief Seeks Disruptive Deals">
+            <figcaption class="content-section__aside-section__description-wrapper">
+              <a href=""
+                 class="content-section__aside-section__title"
+                 title="MI Strategic Growth Chief Seeks Disruptive Deals">
+                MI Strategic Growth Chief Seeks Disruptive Deals
+              </a>
+
+              <time class="content-section__aside-section__time"
+                    datetime="2017-04-11">
+                11 apr 2017
+              </time>
+            </figcaption>
+          </figure>
+
+          <figure class="content-section__aside-section">
+            <img class="content-section__aside-section__caption"
+                 src="./img/MI_Strategic_Growth_Chief_Seeks_Disruptive_Deals_small.jpg"
+                 alt="MI Strategic Growth Chief Seeks Disruptive Deals">
+            <figcaption class="content-section__aside-section__description-wrapper">
+              <a href=""
+                 class="content-section__aside-section__title"
+                 title="MI Strategic Growth Chief Seeks Disruptive Deals">
+                MI Strategic Growth Chief Seeks Disruptive Deals
+              </a>
+
+              <time class="content-section__aside-section__time"
+                    datetime="2017-04-11">
+                11 apr 2017
+              </time>
+            </figcaption>
+          </figure>
+
+          <figure class="content-section__aside-section">
+            <img class="content-section__aside-section__caption"
+                 src="./img/MI_Strategic_Growth_Chief_Seeks_Disruptive_Deals_small.jpg"
+                 alt="MI Strategic Growth Chief Seeks Disruptive Deals">
+            <figcaption class="content-section__aside-section__description-wrapper">
+              <a href=""
+                 class="content-section__aside-section__title"
+                 title="MI Strategic Growth Chief Seeks Disruptive Deals">
+                MI Strategic Growth Chief Seeks Disruptive Deals
+              </a>
+
+              <time class="content-section__aside-section__time"
+                    datetime="2017-04-11">
+                11 apr 2017
+              </time>
+            </figcaption>
+          </figure>
+        </aside>
+      </div>
+    </section>
+
+    <section class="content-section
+                    content-section_with-carousel">
+      <div class="content-section__carousel"
+           id="carouselIndicators"
+           data-ride="carousel">
+        <ol class="content-section__carousel-indicators">
+          <li data-target="#carouselIndicators" data-slide-to="0"></li>
+          <li data-target="#carouselIndicators" data-slide-to="1" class="active"></li>
+          <li data-target="#carouselIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselIndicators" data-slide-to="3"></li>
+        </ol>
+
+        <div class="content-section__carousel-inner">
+          <div class="content-section__carousel-item">
+            <img class="content-section__carousel-item__image"
+                 src="./img/carousel_img_01.jpg"
+                 alt="First slide">
+
+            <div class="content-section__carousel-item__caption">
+              <h4 class="content-section__title
+                         content-section__title_sm">
+                MI Strategic Growth Invests in Burning Glass
+              </h4>
+              <p class="content-section__description">
+                Adding value to companies through strategic,operational, and financial guidance.
+              </p>
+              <a href=""
+                 class="content-section__carousel-item__caption__link">
+                read more
+              </a>
+            </div>
+          </div>
+
+          <div class="content-section__carousel-item active">
+            <img class="content-section__carousel-item__image"
+                 src="./img/carousel_img_01.jpg"
+                 alt="Second slide">
+
+            <div class="content-section__carousel-item__caption">
+              <h4 class="content-section__title
+                         content-section__title_sm">
+                MI Strategic Growth Invests in Burning Glass
+              </h4>
+              <p class="content-section__description">
+                Adding value to companies through strategic,operational, and financial guidance.
+              </p>
+              <a href=""
+                 class="content-section__carousel-item__caption__link">
+                read more
+              </a>
+            </div>
+          </div>
+
+          <div class="content-section__carousel-item">
+            <img class="content-section__carousel-item__image"
+                 src="./img/carousel_img_01.jpg"
+                 alt="Third slide">
+
+            <div class="content-section__carousel-item__caption">
+              <h4 class="content-section__title
+                         content-section__title_sm">
+                MI Strategic Growth Invests in Burning Glass
+              </h4>
+              <p class="content-section__description">
+                Adding value to companies through strategic,operational, and financial guidance.
+              </p>
+              <a href=""
+                 class="content-section__carousel-item__caption__link">
+                read more
+              </a>
+            </div>
+          </div>
+
+          <div class="content-section__carousel-item">
+            <img class="content-section__carousel-item__image"
+                 src="./img/carousel_img_01.jpg"
+                 alt="Fourth slide">
+
+            <div class="content-section__carousel-item__caption">
+              <h4 class="content-section__title
+                         content-section__title_sm">
+                MI Strategic Growth Invests in Burning Glass
+              </h4>
+              <p class="content-section__description">
+                Adding value to companies through strategic,operational, and financial guidance.
+              </p>
+              <a href=""
+                 class="content-section__carousel-item__caption__link">
+                read more
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section
+                    content-section_articles-timeline">
+      <div class="content-section__timeline-wrapper">
+        <div class="content-section__article">
+          <span class="content-section__article__badge">
+            Equity
+          </span>
+
+          <figure class="content-section__article__caption-container">
+            <img class="content-section__article__caption"
+                 src="./img/timeline_article_img_01.jpg"
+                 alt="MI Strategic Growth Chief Seeks Disruptive Deals">
+            <figcaption class="content-section__article__figcaption">
+              <a href=""
+                 class="content-section__article__title"
+                 title="MI Strategic Growth Chief Seeks Disruptive Deals">
+                MI Strategic Growth Chief Seeks Disruptive Deals
+              </a>
+
+              <time class="content-section__article__time"
+                    datetime="2017-04-11">
+                11 apr 2017
+              </time>
+            </figcaption>
+          </figure>
+
+          <p class="content-section__article__notice">
+            To achieve this goal, we seek to forge lasting partnerships with
+            talented entrepreneurs and executives and provide them the capital.
+          </p>
+        </div>
+
+        <div class="content-section__article">
+          <figure class="content-section__article__caption-container">
+            <div class="content-section__article__caption">
+              <video class="content-section__article__video-container"
+                     poster="./img/timeline_article_img_02.jpg"
+                     width="370"
+                     height="259">
+                <source src="https://www.youtube.com/embed/-F91QzJ8Hic"
+                        type="video/mp4"
+                        rel="noopener noreferrer">
+                Unfortunately your browser does not support this type of video.
+                Please, try to watch it here
+                <a href="https://www.youtube.com/embed/-F91QzJ8Hic"
+                   rel="noopener noreferrer"
+                   target="_blank">
+                  Link to Video
+                </a>
+              </video>
+
+              <button class="content-section__article__video-play-button">Play video</button>
+            </div>
+
+            <figcaption class="content-section__article__figcaption">
+              <h3 class="content-section__article__title">
+                MI Strategic Growth Chief Seeks Disruptive Deals
+              </h3>
+
+              <time class="content-section__article__time"
+                    datetime="2017-04-11">
+                11 apr 2017
+              </time>
+            </figcaption>
+          </figure>
+
+          <p class="content-section__article__notice">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore.Magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim...id est laborum. Sed ut perspiciatis... unde omnis iste natus error sit voluptatem accusantium
+            doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+            beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+            fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+            est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
+            tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+          </p>
+        </div>
+
+        <div class="content-section__article">
+          <span class="content-section__article__badge">
+            Strategic Growth
+          </span>
+
+          <figure class="content-section__article__caption-container">
+            <img class="content-section__article__caption"
+                 src="./img/timeline_article_img_03.jpg"
+                 alt="MI Strategic Growth Chief Seeks Disruptive Deals">
+            <figcaption class="content-section__article__figcaption">
+              <a href=""
+                 class="content-section__article__title"
+                 title="MI Strategic Growth Chief Seeks Disruptive Deals">
+                MI Strategic Growth Chief Seeks Disruptive Deals
+              </a>
+
+              <time class="content-section__article__time"
+                    datetime="2017-04-11">
+                11 apr 2017
+              </time>
+            </figcaption>
+          </figure>
+
+          <p class="content-section__article__notice">
+            To achieve this goal, we seek to forge lasting partnerships with
+            talented entrepreneurs and executives and provide them the capital.
+          </p>
+        </div>
+
+        <div class="content-section__article">
+          <div class="content-section__quotation-wrapper">
+            <q class="content-section__quotation">
+              Griffin-Benefit Street Partners BDC Corp. Declared Effective by the SEC
+            </q>
+
+            <cite class="content-section__cite">
+              Phoebe Lamb
+            </cite>
+          </div>
+        </div>
+
+        <div class="content-section__article">
+          <span class="content-section__article__badge">
+            Strategic Growth
+          </span>
+
+          <figure class="content-section__article__caption-container">
+            <img class="content-section__article__caption"
+                 src="./img/timeline_article_img_04.jpg"
+                 alt="MI Strategic Growth Chief Seeks Disruptive Deals">
+            <figcaption class="content-section__article__figcaption">
+              <a href=""
+                 class="content-section__article__title"
+                 title="MI Strategic Growth Chief Seeks Disruptive Deals">
+                MI Strategic Growth Chief Seeks Disruptive Deals
+              </a>
+
+              <time class="content-section__article__time"
+                    datetime="2017-04-11">
+                11 apr 2017
+              </time>
+            </figcaption>
+          </figure>
+
+          <p class="content-section__article__notice">
+            To achieve this goal, we seek to forge lasting partnerships with
+            talented entrepreneurs and executives and provide them the capital.
+          </p>
+        </div>
+
+        <div class="content-section__article content-section__article_dark-background">
+          <div class="content-section__quotation-wrapper">
+            <q class="content-section__quotation">
+              Griffin-Benefit Street Partners BDC Corp. Declared Effective by the SEC
+            </q>
+
+            <cite class="content-section__cite">
+              Phoebe Lamb
+            </cite>
+          </div>
+        </div>
+
+        <div class="content-section__article">
+          <span class="content-section__article__badge">
+            Equity
+          </span>
+
+          <figure class="content-section__article__caption-container">
+            <img class="content-section__article__caption"
+                 src="./img/timeline_article_img_06.jpg"
+                 alt="MI Strategic Growth Chief Seeks Disruptive Deals">
+          </figure>
+        </div>
+
+        <div class="content-section__article">
+          <span class="content-section__article__badge">
+            Equity
+          </span>
+
+          <figure class="content-section__article__caption-container">
+            <img class="content-section__article__caption"
+                 src="./img/timeline_article_img_07.jpg"
+                 alt="MI Strategic Growth Chief Seeks Disruptive Deals">
+            <figcaption class="content-section__article__figcaption">
+              <a href=""
+                 class="content-section__article__title"
+                 title="MI Strategic Growth Chief Seeks Disruptive Deals">
+                MI Strategic Growth Chief Seeks Disruptive Deals
+              </a>
+
+              <time class="content-section__article__time"
+                    datetime="2017-04-11">
+                11 apr 2017
+              </time>
+            </figcaption>
+          </figure>
+
+          <p class="content-section__article__notice">
+            To achieve this goal, we seek to forge lasting partnerships with
+            talented entrepreneurs and executives and provide them the capital.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section
+                    content-section_business-slide">
+      <div class="content-section__description-wrapper
+                  content-section__description-wrapper_wide">
+        <h4 class="content-section__title
+                   content-section__title_m">
+          Right Investments. Right Rewards.
+        </h4>
+
+        <p class="content-section__description
+                  content-section__description_m">
+          Adding value to companies through strategic, operational, and financial guidance.
+        </p>
+
+        <p class="content-section__description">
+          <!--If this element will coll some chat (f.e. "Intercom") than change it to "button" tag-->
+          <a href="/contacts"
+             class="content-section__description__button
+                    content-section__description__button_centered"
+             title="contact us">
+            contact us
+          </a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-wrapper">
+    <section class="footer-section footer-section_contacts">
+      <i class="footer-section__logo"></i>
+
+      <address class="footer-section footer-section__address">
+        <span class="footer-section__address__section">
+          267 Banbury Road Summertown Oxford.
+        </span>
+
+        <span class="footer-section__address__section">
+          42 Upper Berkeley Street London.
+        </span>
+
+        <a href="tel:+44777888989"
+           class="footer-section__address__section
+                  footer-section__address__link">
+          +44 777888 989
+        </a>
+
+        <a href="mailto:hello@massimpressions.com"
+           class="footer-section__address__section
+                  footer-section__address__link">
+          hello@massimpressions.com
+        </a>
+      </address>
+    </section>
+
+    <section class="footer-section">
+      <nav class="footer-section__nav">
+        <ul class="footer-section__nav__list">
+          <li class="footer-section__nav__list-item">
+            <a href=""
+               class="footer-section__nav__link"
+               title="Home">
+              Home
+            </a>
+          </li>
+
+          <li class="footer-section__nav__list-item">
+            <a href=""
+               class="footer-section__nav__link"
+               title="About">
+              About
+            </a>
+          </li>
+
+          <li class="footer-section__nav__list-item">
+            <a href=""
+               class="footer-section__nav__link"
+               title="Services">
+              Services
+            </a>
+          </li>
+
+          <li class="footer-section__nav__list-item">
+            <a href=""
+               class="footer-section__nav__link"
+               title="Investments">
+              Investments
+            </a>
+          </li>
+
+          <li class="footer-section__nav__list-item">
+            <a href=""
+               class="footer-section__nav__link active"
+               title="Blog">
+              Blog
+            </a>
+          </li>
+
+          <li class="footer-section__nav__list-item">
+            <a href=""
+               class="footer-section__nav__link"
+               title="Contact">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <section class="footer-section footer-section_info">
+      <p class="footer-section__tm">
+        © 2017 Mass Impressions & Tranmautritam. Make the right impression | |
+        <a href=""
+           class="footer-section__tm__link"
+           title="Privacy Policy">
+          Privacy Policy
+        </a>
+      </p>
+
+      <div class="footer-section__social">
+        <ul class="footer-section__social__list">
+          <li class="footer-section__social__list-item">
+            <a href=""
+               class="footer-section__social__link
+                      footer-section__social__link_fb"
+               title="Facebook"
+               rel="noopener noreferrer"
+               target="_blank">
+              Facebook
+            </a>
+          </li>
+
+          <li class="footer-section__social__list-item">
+            <a href=""
+               class="footer-section__social__link
+                      footer-section__social__link_twitter"
+               title="Twitter"
+               rel="noopener noreferrer"
+               target="_blank">
+              Twitter
+            </a>
+          </li>
+
+          <li class="footer-section__social__list-item">
+            <a href=""
+               class="footer-section__social__link
+                      footer-section__social__link_google-plus"
+               title="Google+"
+               rel="noopener noreferrer"
+               target="_blank">
+              Google+
+            </a>
+          </li>
+
+          <li class="footer-section__social__list-item">
+            <a href=""
+               class="footer-section__social__link
+                      footer-section__social__link_instagram"
+               title="Instagram"
+               rel="noopener noreferrer"
+               target="_blank">
+              Instagram
+            </a>
+          </li>
+
+          <li class="footer-section__social__list-item">
+            <a href=""
+               class="footer-section__social__link
+                      footer-section__social__link_linkedin"
+               title="Linkedin"
+               rel="noopener noreferrer"
+               target="_blank">
+              Linkedin
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </footer>
+
+  <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+</body>
+</html>

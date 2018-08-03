@@ -1,0 +1,127 @@
+.header {
+  &-wrapper {
+    width: 100%;
+    background-color: $white;
+  }
+
+  &-navbar {
+    @include make-container();
+    @extend .navbar, .navbar-expand-lg, .navbar-light;
+    padding: 0;
+    max-width: 1920px;
+  }
+
+  &-brand {
+    margin: 0 30px 0 0;
+    padding: 0;
+    min-width: 273px;
+    height: 90px;
+    background: #fff url('./img/miequity-logo.png') no-repeat 0 center;
+    background-size: 273px auto;
+    color: transparent;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: transparent;
+      text-decoration: none;
+      outline: none;
+    }
+
+    @media (max-width: 575.98px) {
+      margin: 0 0 0 30px;
+      min-width: 144px;
+      background-size: 144px auto;
+    }
+  }
+
+  &-toggler {
+    @extend .navbar-toggler;
+    margin-right: 30px;
+
+    &__icon {
+      @extend .navbar-toggler-icon;
+    }
+  }
+
+  &-menu {
+    @extend .collapse, .navbar-collapse;
+
+    &__list {
+      @extend .navbar-nav;
+      margin-left: auto;
+      padding-right: 30px;
+
+      @media (min-width: 992px) and (max-width: 1199.98px) {
+        padding-right: 15px;
+      }
+
+      @media (min-width: 768px) and (max-width: 991.98px) {
+        padding-right: 15px;
+      }
+    }
+
+    &__item {
+      @extend .nav-item;
+      padding: 0 30px;
+      position: relative;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      font-size: 0;
+      z-index: 1;
+
+      &.active {
+        &::after {
+          @include decoration-with-line($color-orange);
+        }
+      }
+
+      @media (min-width: 992px) and (max-width: 1199.98px) {
+        padding: 0 15px;
+      }
+
+      @media (min-width: 768px) and (max-width: 991.98px) {
+        padding: 0 15px;
+      }
+    }
+
+    &__link {
+      color: $color-gray-900;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      font-size: 1rem;
+      line-height: 1em;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        color: $color-gray-900;
+        text-decoration: none;
+        outline: none;
+        &::after {
+          @include decoration-with-line(transparentize($color-orange, 0.8), 2rem);
+        }
+      }
+
+      &:active {
+        &::after {
+          @include decoration-with-line(transparentize($color-orange, 0.5), 2rem);
+        }
+      }
+
+      .active & {
+        &:hover,
+        &:focus,
+        &:active {
+          cursor: default;
+          user-select: none;
+          &::after {
+            @include decoration-with-line($color-orange);
+          }
+        }
+      }
+    }
+  }
+}

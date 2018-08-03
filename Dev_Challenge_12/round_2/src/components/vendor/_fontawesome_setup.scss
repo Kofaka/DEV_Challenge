@@ -1,0 +1,13 @@
+// Include only necessary elements (icons, variables …)
+// to reduce styles file size
+
+@import 'fontawesome-variables_setup';
+
+$fa-font-path: './fonts';
+
+@import 'fontawesome/mixins';
+@import 'fontawesome/core';
+@import 'fontawesome-icons_setup';
+@import 'fontawesome/fa-brands';
+
+
